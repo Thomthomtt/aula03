@@ -5,4 +5,7 @@ gols2 = int(input("Quantos gols foram marcados pelo segundo time? "))
 if gols1>gols2:
     print(f"O time {time1} foi o vencedor com {gols1} gols")
 else:
-    print(f"O time {time2} foi o vencedor com {gols2} gols")
+    if gols1==gols2:
+        print(f"Não houve vencedor, deu empate")
+    else:
+        print(f"O time {time2} foi o vencedor com {gols2} gols")
